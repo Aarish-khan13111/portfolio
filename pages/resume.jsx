@@ -43,24 +43,14 @@ const resume = () => {
         </p>
 
         {/* Skills */}
-        <h5 className=" underline text-[20px] py-6">Skills</h5>
-        <div className="py-6">
-          <p className="py-2">
+        <h5 className="underline text-[20px] py-6">Skills</h5>
+        <div>
+          <p className="md:line-clamp-3">
             <span className="font-bold">Technical Skills</span>
-            <span className="px-2">|</span>Web Developer
-            <span className="px-2">|</span>HTML
-            <span className="px-2">|</span>CSS
-            <span className="px-2">|</span>Javascript
-            <span className="px-2">|</span>React
-            <span className="px-2">|</span>Next JS
-            <span className="px-2">|</span>Gatsby
-            <span className="px-2">|</span>SQL
-            <span className="px-2">|</span>NoSQL
-            <span className="px-2">|</span>Redux
-            <span className="px-2">|</span>Tailwind
-            <span className="px-2">|</span>Bootstrap
-            <span className="px-2">|</span>Firebase
-            <span className="px-2">|</span>RESTAPI
+            <span className="px-2">
+              | Web Developer | HTML | CSS| Javascript | React | Next JS| Gatsby
+              | SQL | NoSQL | Redux | Tailwind | Bootstrap | Firebase | RESTAPI
+            </span>
           </p>
           <p>
             <span className="font-bold">Analytical Tools</span>
