@@ -25,19 +25,23 @@ const Navbar = () => {
 
     if (currentTheme === "dark") {
       return (
-        <SunIcon
-          className="w-7 h-7"
-          role="button"
-          onClick={() => setTheme("light")}
-        />
+        <div className="flex">
+          <SunIcon
+            className="w-8 h-7 "
+            role="button"
+            onClick={() => setTheme("light")}
+          />
+        </div>
       );
     } else {
       return (
-        <MoonIcon
-          className="w-7 h-7"
-          role="button"
-          onClick={() => setTheme("dark")}
-        />
+        <div className="flex">
+          <MoonIcon
+            className="w-8 h-7 "
+            role="button"
+            onClick={() => setTheme("dark")}
+          />
+        </div>
       );
     }
   };
@@ -87,7 +91,6 @@ const Navbar = () => {
         </Link>
         <div className="px-5">
           <ul className="hidden md:flex justify-between">
-            {renderThemeChanger()}
             <li className="ml-10 text-sm uppercase hover:border-b">
               <Link href="/">Home</Link>
             </li>
@@ -106,10 +109,16 @@ const Navbar = () => {
             <li className="ml-10 text-sm uppercase hover:border-b">
               <Link href="/#contact">Contact</Link>
             </li>
+            <li>
+              <div className="ml-10">{renderThemeChanger()}</div>
+            </li>
           </ul>
           {/* Hamburger Icon */}
-          <div onClick={handleNav} className="md:hidden">
-            <AiOutlineMenu size={25} />
+          <div className="flex space-x-5">
+            <div className="md:hidden">{renderThemeChanger()}</div>
+            <div onClick={handleNav} className="md:hidden">
+              <AiOutlineMenu size={25} />
+            </div>
           </div>
         </div>
       </div>
@@ -124,7 +133,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 dark:bg-gray-900 dark:text-gray-100"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }>
           <div>
