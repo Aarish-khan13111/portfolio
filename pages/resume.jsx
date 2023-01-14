@@ -62,11 +62,13 @@ const resume = () => {
             <span className="px-2">|</span>Firebase
             <span className="px-2">|</span>RESTAPI
           </p>
-          <span className="font-bold">Analytical Tools</span>
-          <span className="px-2">|</span>Power Bi
-          <span className="px-2">|</span>Tableau
-          <span className="px-2">|</span>Power Query
-          <span className="px-2">|</span>Advanced Excel
+          <p>
+            <span className="font-bold">Analytical Tools</span>
+            <span className="px-2">|</span>Power Bi
+            <span className="px-2">|</span>Tableau
+            <span className="px-2">|</span>Power Query
+            <span className="px-2">|</span>Advanced Excel
+          </p>
         </div>
 
         <h5 className="py-6 underline text-[20px]">Work Experience</h5>
