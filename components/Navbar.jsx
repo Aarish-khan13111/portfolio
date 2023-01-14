@@ -81,11 +81,11 @@ const Navbar = () => {
           ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
           : "fixed w-full h-20 z-[100]"
       }>
-      <div className=" flex justify-between items-center w-full h-full px-3 2xl:px-16">
-        <Link href="/" className=" text-xs text-[#5651e5]">
-          <h1>A.k</h1>
+      <div className=" flex justify-between items-center w-full h-full px-7 2xl:px-16">
+        <Link href="/">
+          <Image src="/assets/logo4.png" width={50} height={50} />
         </Link>
-        <div>
+        <div className="px-5">
           <ul className="hidden md:flex justify-between">
             {renderThemeChanger()}
             <li className="ml-10 text-sm uppercase hover:border-b">
@@ -130,12 +130,7 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <Image
-                  src="/assets/navlogo.png"
-                  width="87"
-                  height="35"
-                  alt="/"
-                />
+                <Image src="/assets/logo4.png" width="50" height="35" alt="/" />
               </Link>
               <div
                 onClick={handleNav}
