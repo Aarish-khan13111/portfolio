@@ -53,7 +53,6 @@ const Contact = () => {
                       <FaGithub />
                     </div>
                   </Link>
-
                   <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <AiOutlineMail />
                   </div>

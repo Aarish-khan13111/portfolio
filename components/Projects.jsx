@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import propertyImg from "../public/assets/projects/property.jpg";
+import ecomImg from "../public/assets/projects/ecom.jpg";
 import cryptoImg from "../public/assets/projects/crypto.jpg";
-import netflixImg from "../public/assets/projects/netflix.jpg";
+import moviesImg from "../public/assets/projects/movies.jpg";
 import twitchImg from "../public/assets/projects/twitch.jpg";
 import ProjectItem from "./ProjectItem";
 
@@ -17,21 +17,21 @@ const Projects = () => {
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Property Finder"
-            backgroundImg={propertyImg}
-            projectUrl="/property"
+            title="Ecommerce App"
+            backgroundImg={ecomImg}
+            projectUrl="/ecommerce"
+            tech="React JS"
+          />
+          <ProjectItem
+            title="Movies+ App"
+            backgroundImg={moviesImg}
+            projectUrl="/movies"
             tech="React JS"
           />
           <ProjectItem
             title="Crypto App"
             backgroundImg={cryptoImg}
             projectUrl="/crypto"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Netflix App"
-            backgroundImg={netflixImg}
-            projectUrl="/netflix"
             tech="React JS"
           />
           <ProjectItem
