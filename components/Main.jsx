@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
@@ -13,7 +14,7 @@ const Main = () => {
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className="py-4">
-            Hi, I&#39;m <span className="text-[#D32222]"> Aarish</span>
+            Hi, I&#39;m <span className="text-[#BD0A0A]"> Aarish</span>
           </h1>
           <h1 className="py-2">Web Developer</h1>
           <p className="py-4 sm:max-w-[70%] m-auto">

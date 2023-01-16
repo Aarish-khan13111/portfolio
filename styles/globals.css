@@ -36,6 +36,6 @@ html {
   }
 
   button {
-    @apply shadow-lg shadow-gray-600 rounded-xl uppercase bg-gradient-to-r from-[#b1291c] to-[#d31a518c]   text-white;
+    @apply shadow-lg shadow-gray-600 rounded-xl uppercase bg-gradient-to-r from-[#970D1A] to-[#4e204d]   text-white;
   }
 }
