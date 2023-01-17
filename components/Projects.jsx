@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ecomImg from "../public/assets/projects/ecom.jpg";
-import cryptoImg from "../public/assets/projects/crypto.jpg";
+import mplayerImg from "../public/assets/projects/music player.jpg";
 import moviesImg from "../public/assets/projects/movies.jpg";
-import twitchImg from "../public/assets/projects/twitch.jpg";
+import gitImg from "../public/assets/projects/gitapp.jpg";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -20,25 +20,25 @@ const Projects = () => {
             title="Ecommerce App"
             backgroundImg={ecomImg}
             projectUrl="/ecommerce"
-            tech="React JS"
+            tech="Gatsby"
           />
           <ProjectItem
             title="Movies+ App"
             backgroundImg={moviesImg}
             projectUrl="/movies"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Crypto App"
-            backgroundImg={cryptoImg}
-            projectUrl="/crypto"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Twitch UI"
-            backgroundImg={twitchImg}
-            projectUrl="/twitch"
             tech="Next JS"
+          />
+          <ProjectItem
+            title="Music Player App"
+            backgroundImg={mplayerImg}
+            projectUrl="/mplayer"
+            tech="javaScript"
+          />
+          <ProjectItem
+            title="Github user fetching App"
+            backgroundImg={gitImg}
+            projectUrl="/gitapp"
+            tech="React Js"
           />
         </div>
       </div>
