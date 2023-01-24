@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ecomImg from "../public/assets/projects/ecom.jpg";
-import mplayerImg from "../public/assets/projects/music player.jpg";
+import spotifyImg from "../public/assets/projects/spotify.jpg";
 import moviesImg from "../public/assets/projects/movies.jpg";
 import gitImg from "../public/assets/projects/gitapp.jpg";
 import ProjectItem from "./ProjectItem";
@@ -29,10 +29,10 @@ const Projects = () => {
             tech="Next JS"
           />
           <ProjectItem
-            title="Music Player App"
-            backgroundImg={mplayerImg}
-            projectUrl="/mplayer"
-            tech="javaScript"
+            title="Spotify App"
+            backgroundImg={spotifyImg}
+            projectUrl="/spotify"
+            tech="Next JS"
           />
           <ProjectItem
             title="Github user fetching App"
