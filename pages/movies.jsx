@@ -47,13 +47,15 @@ const netflix = () => {
             <a
               href="https://github.com/Aarish-khan13111/Ott-Platform"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <button className="px-8 py-2 mt-4 mr-8">Code</button>
             </a>
             <a
-              href="https://movieinfo-mak.netlify.app/"
+              href="https://ott-platform-five.vercel.app/"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <button className="px-8 py-2 mt-4">Demo</button>
             </a>
           </div>
