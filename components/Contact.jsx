@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail, AiFillPhone } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
@@ -40,7 +40,8 @@ const Contact = () => {
                   <Link
                     href="https://www.linkedin.com/in/aarish-khan-6a021b245/"
                     target="_blank"
-                    rel="noreferrer">
+                    rel="noreferrer"
+                  >
                     <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn />
                     </div>
@@ -48,14 +49,17 @@ const Contact = () => {
                   <Link
                     href="https://github.com/Aarish-khan13111"
                     target="_blank"
-                    rel="noreferrer">
+                    rel="noreferrer"
+                  >
                     <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaGithub />
                     </div>
                   </Link>
-                  <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
+                  <a href={`tel:${7692810574}`}>
+                    <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <AiFillPhone />
+                    </div>
+                  </a>
                   <Link href="/resume">
                     <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <BsFillPersonLinesFill />
@@ -72,7 +76,8 @@ const Contact = () => {
               <form
                 action="https://formspree.io/f/mzbqpkwp"
                 method="POST"
-                encType="multipart/form-data">
+                encType="multipart/form-data"
+              >
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
@@ -114,7 +119,8 @@ const Contact = () => {
                   <textarea
                     className="border-2 rounded-lg p-3 border-gray-500"
                     rows="10"
-                    name="message"></textarea>
+                    name="message"
+                  ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">
                   Send Message

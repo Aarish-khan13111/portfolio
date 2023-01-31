@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { AiFillPhone } from "react-icons/ai";
 
 const resume = () => {
   return (
@@ -19,16 +20,21 @@ const resume = () => {
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center dark:text-black">
           <h2 className="text-center ">Aarish khan</h2>
           <div className="flex">
+            <a href={`tel:${7692810574}`} target="_blank" rel="noreferrer">
+              <AiFillPhone size={20} style={{ marginRight: "1rem" }} />
+            </a>
             <a
               href="https://www.linkedin.com/in/aarish-khan-6a021b245/"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <FaLinkedinIn size={20} style={{ marginRight: "1rem" }} />
             </a>
             <a
               href="https://github.com/Aarish-khan13111"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <FaGithub size={20} style={{ marginRight: "1rem" }} />
             </a>
           </div>
