@@ -56,6 +56,7 @@ const resume = () => {
             <span className="px-2">
               | Web Developer | HTML | CSS| Javascript | React | Next JS| Gatsby
               | SQL | NoSQL | Redux | Tailwind | Bootstrap | Firebase | RESTAPI
+              | Node.js | Express.js
             </span>
           </p>
           <p>
@@ -74,7 +75,9 @@ const resume = () => {
             <span className="font-bold italic">BMW Solution</span>
             <span className="px-2">|</span>Bhopal,M.P
           </p>
-          <p className="py-1 italic">Traniee Engineer (Nov 2020 - Dec 2021)</p>
+          <p className="py-1 italic">
+            Traniee Engineer (july 2021 - july 2022)
+          </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
               conducting desktop and Plant Activities, Maintaining of Plant and

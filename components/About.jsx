@@ -11,6 +11,7 @@ const About = () => {
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
+
           <p className="py-2">
             I specialize in building mobile responsive front-end UI applications
             that connect with API’s and other backend technologies. I’m
@@ -37,7 +38,7 @@ const About = () => {
           <Image
             src="/assets/about.jpg"
             height="100"
-            width="500"
+            width="450"
             className="rounded-xl object-fill"
             alt="/"
           />

@@ -12,6 +12,8 @@ import MongoDb from "../public/assets/skills/mongo.png";
 import Mssql from "../public/assets/skills/mssql.png";
 import Mysql from "../public/assets/skills/MySQL.svg";
 import Gatsby from "../public/assets/skills/Gatsby.png";
+import Node from "../public/assets/skills/Nodejs.svg";
+import express from "../public/assets/skills/expressjs.svg";
 
 const Skills = () => {
   return (
@@ -129,6 +131,26 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>SQL Server</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={Node} width="64px" height="64px" alt="/" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Node.js</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={express} width="64px" height="64px" alt="/" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Express.js</h3>
               </div>
             </div>
           </div>
