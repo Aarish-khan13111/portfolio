@@ -1,11 +1,15 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import moviesImg from "../public/assets/projects/movies.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Head from "next/head";
+import Aos from "aos";
 
 const netflix = () => {
+  useEffect(() => {
+    Aos.init({duration:1000})
+  }, [])
   return (
     <>
       <Head>
@@ -26,13 +30,13 @@ const netflix = () => {
             alt="/"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-            <h2 className="py-2">Movies pluse App</h2>
-            <h3>React JS / Tailwind / Firebase</h3>
+            <h2 className="py-2"data-aos="fade-up">Movies pluse App</h2>
+            <h3 data-aos="fade-up">React JS / Tailwind / Firebase</h3>
           </div>
         </div>
 
         <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
-          <div className="col-span-4">
+          <div className="col-span-4"data-aos="fade-up">
             <p>Project</p>
             <h2>Overview</h2>
             <p>
@@ -59,7 +63,7 @@ const netflix = () => {
               <button className="px-8 py-2 mt-4">Demo</button>
             </a>
           </div>
-          <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
+          <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4"data-aos="fade-up">
             <div className="p-2">
               <p className="text-center font-bold pb-2">Technologies</p>
               <div className="grid grid-cols-3 md:grid-cols-1">

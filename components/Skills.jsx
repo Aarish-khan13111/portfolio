@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import Html from "../public/assets/skills/html.png";
 import Css from "../public/assets/skills/css.png";
 import Javascript from "../public/assets/skills/javascript.png";
@@ -14,17 +14,22 @@ import Mysql from "../public/assets/skills/MySQL.svg";
 import Gatsby from "../public/assets/skills/Gatsby.png";
 import Node from "../public/assets/skills/Nodejs.svg";
 import express from "../public/assets/skills/expressjs.svg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Skills = () => {
+  useEffect(() => {
+    Aos.init({duration:1000})
+  }, [])
   return (
     <div id="skills" className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-[#D32222]">
+        <p className="text-xl tracking-widest uppercase text-[#D32222]"data-aos="zoom-in-up">
           Skills
         </p>
-        <h2 className="py-4">What I Can Do</h2>
+        <h2 className="py-4"data-aos="zoom-in-up">What I Can Do</h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={Html} width="64px" height="64px" alt="/" />
@@ -34,7 +39,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={Css} width="64px" height="64px" alt="/" />
@@ -44,7 +49,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={Javascript} width="64px" height="64px" alt="/" />
@@ -54,7 +59,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={ReactImg} width="64px" height="64px" alt="/" />
@@ -64,7 +69,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={Tailwind} width="64px" height="64px" alt="/" />
@@ -74,7 +79,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={Firebase} width="64px" height="64px" alt="/" />
@@ -84,7 +89,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={Github} width="64px" height="64px" alt="/" />
@@ -94,7 +99,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={NextJS} width="64px" height="64px" alt="/" />
@@ -104,7 +109,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={Gatsby} width="64px" height="64px" alt="/" />
@@ -114,7 +119,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={MongoDb} width="64px" height="64px" alt="/" />
@@ -124,7 +129,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={Mssql} width="64px" height="64px" alt="/" />
@@ -134,7 +139,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={Node} width="64px" height="64px" alt="/" />
@@ -144,7 +149,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={express} width="64px" height="64px" alt="/" />
@@ -154,7 +159,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"data-aos="zoom-in-up">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={Mysql} width="64px" height="64px" alt="/" />

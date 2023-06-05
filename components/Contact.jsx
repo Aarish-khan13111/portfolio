@@ -1,23 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineMail, AiFillPhone } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import ContactImg from "../public/assets/contact.jpg";
+import Aos from "aos";
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({duration:1000})
+  }, [])
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
-        <p className="text-xl tracking-widest uppercase text-[#D32222]">
+        <p className="text-xl tracking-widest uppercase text-[#D32222]"data-aos="fade-up">
           Contact
         </p>
-        <h2 className="py-4">Get In Touch</h2>
+        <h2 className="py-4"data-aos="fade-up">Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-lg shadow-gray-600 rounded-lg p-4">
+          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-lg shadow-gray-600 rounded-lg p-4"data-aos="fade-up">
             <div className="lg:p-4 h-full ">
               <div>
                 <Image
@@ -71,7 +75,7 @@ const Contact = () => {
           </div>
 
           {/* right */}
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-600 rounded-xl lg:p-4">
+          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-600 rounded-xl lg:p-4"data-aos="fade-up">
             <div className="p-4">
               <form
                 action="https://formspree.io/f/mzbqpkwp"

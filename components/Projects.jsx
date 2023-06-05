@@ -1,26 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import ecomImg from "../public/assets/projects/ecom.jpg";
 import spotifyImg from "../public/assets/projects/spotify.jpg";
 import moviesImg from "../public/assets/projects/movies.jpg";
 import gitImg from "../public/assets/projects/gitapp.jpg";
 import ProjectItem from "./ProjectItem";
+import Aos from "aos";
 
 const Projects = () => {
+  useEffect(() => {
+    Aos.init({duration:1000})
+  }, [])
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-[#D32222]">
+        <p className="text-xl tracking-widest uppercase text-[#D32222]"data-aos="zoom-in-up">
           Projects
         </p>
-        <h2 className="py-4">What I&apos;ve Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <h2 className="py-4"data-aos="zoom-in-up">What I&apos;ve Built</h2>
+        <div className="grid md:grid-cols-2 gap-8"data-aos="zoom-in-up">
           <ProjectItem
             title="Ecommerce App"
             backgroundImg={ecomImg}
             projectUrl="/ecommerce"
             tech="Gatsby"
+          
           />
           <ProjectItem
             title="Movies+ App"
