@@ -4,13 +4,10 @@ import ecomImg from "../public/assets/projects/ecom.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Head from "next/head";
-import aos from "aos";
 
 const property = () => {
 
-  useEffect(() => {
-    aos.init({duration:1000})
-  }, [])
+ 
   return (
     <>
       <Head>

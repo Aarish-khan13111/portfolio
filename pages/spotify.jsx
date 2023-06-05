@@ -4,12 +4,9 @@ import spotifyImg from "../public/assets/projects/spotify.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Head from "next/head";
-import aos from "aos";
 
 const property = () => {
-  useEffect(() => {
-    aos.init({duration:1000})
-  }, [])
+  
   return (
     <>
       <Head>
