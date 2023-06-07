@@ -4,6 +4,7 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Certificat from "../components/Certificate";
 
 export default function Home() {
   return (
@@ -19,7 +20,8 @@ export default function Home() {
       <Main />
       <About />
       <Skills />
-      <Projects />
+      <Projects title="Projects" subTitle="What I&apos;ve Built" />
+      <Certificat title="Certification" subTitle="Certificate & Achivements"/>
       <Contact />
     </>
   );
