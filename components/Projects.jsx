@@ -80,6 +80,7 @@ const Projects = ({ title, subTitle }) => {
             {projectItems.map((item, index) => (
               //  console.log(item);
               <ProjectItem
+                key={item.title}
                 title={item.title}
                 backgroundImg={item.backgroundImg}
                 projectUrl={item.projectUrl}
