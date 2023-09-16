@@ -8,5 +8,9 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("taos/plugin"), require("@tailwindcss/line-clamp")],
+  plugins: [
+    require("taos/plugin"),
+    require("@tailwindcss/line-clamp"),
+    require("tailwind-scrollbar-hide"),
+  ],
 };

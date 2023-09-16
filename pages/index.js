@@ -20,8 +20,8 @@ export default function Home() {
       <Main />
       <About />
       <Skills />
-      <Projects title="Projects" subTitle="What I&apos;ve Built" />
-      <Certificat title="Certification" subTitle="Certificate & Achivements"/>
+      <Projects title="Projects" subTitle="What I've Built" />
+      <Certificat title="Certification" subTitle="Certificate & Achivements" />
       <Contact />
     </>
   );
