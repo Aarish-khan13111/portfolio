@@ -75,7 +75,7 @@ const Projects = ({ title, subTitle }) => {
         </h2>
         <div className="overflow-x-scroll scrollbar-hide py-5 p-2">
           <div
-            className="flex w-[215rem] md:w-[250rem]  gap-8"
+            className="flex w-[180rem] md:w-[250rem]  gap-8"
             data-aos="zoom-in-up">
             {projectItems.map((item, index) => (
               //  console.log(item);
