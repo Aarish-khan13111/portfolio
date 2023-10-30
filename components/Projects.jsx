@@ -8,6 +8,7 @@ import gitImg from "../public/assets/projects/gitapp.jpg";
 import socialMedia from "../public/assets/projects/socialmedia.png";
 import nextauth from "../public/assets/projects/next-auth-app.png";
 import webrtc from "../public/assets/projects/webrtc.png";
+import aws from "../public/assets/projects/aws.png";
 import ProjectItem from "./ProjectItem";
 import Aos from "aos";
 import { BsArrowLeft } from "react-icons/bs";
@@ -19,6 +20,12 @@ const Projects = ({ title, subTitle }) => {
   }, []);
 
   const projectItems = [
+    {
+      title: "AWS Cloud Project",
+      backgroundImg: aws,
+      projectUrl: "/aws",
+      tech: "AWS",
+    },
     {
       title: "Social Media App",
       backgroundImg: socialMedia,
