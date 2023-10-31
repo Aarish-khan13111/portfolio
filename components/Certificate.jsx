@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import mern from "../public/assets/certificate/mern.png";
 import react from "../public/assets/certificate/react.png";
+import devops from "../public/assets/certificate/devops.png";
 import ProjectItem from "./ProjectItem";
 import Aos from "aos";
 
@@ -31,6 +32,11 @@ const Projects = ({ title, subTitle }) => {
             title="React js"
             backgroundImg={react}
             projectUrl="https://courses.learncodeonline.in/learn/certificate/6574658-50332"
+          />
+          <ProjectItem
+            title="Devops"
+            backgroundImg={devops}
+            projectUrl="https://www.udemy.com/certificate/UC-b6e6529c-84e6-46d1-aae6-72ebecab6988/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
           />
         </div>
       </div>
