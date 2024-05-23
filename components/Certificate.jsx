@@ -45,7 +45,7 @@ const Certificate = ({ title, subTitle }) => {
         </h2>
         <div className="overflow-x-scroll scrollbar-hide py-5 p-2">
           <div
-            className="flex w-[69rem] md:w-[100rem]  gap-8"
+            className="flex w-[65rem] md:w-[100rem]  gap-8"
             data-aos="zoom-in-up">
             {certItem.map((item, index) => (
               //  console.log(item);
