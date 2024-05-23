@@ -29,11 +29,11 @@ const Main = () => {
             </span>
           </h1>
           <h1 className="py-2" data-aos="zoom-in-up">
-            Web Developer
+            DevOps Engineer
           </h1>
           <p className="py-4 sm:max-w-[70%] m-auto" data-aos="zoom-in-up">
-            I’m focused on building responsive front-end web applications
-            integrating back-end technologies.
+            Cloud & DevOps Enthusiast | Aspiring DevOps Engineer | Dedicated to
+            Continuous Improvement
           </p>
           <div
             className="flex items-center justify-between max-w-[330px] m-auto py-4"

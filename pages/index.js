@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Aarish | Developer</title>
+        <title>Aarish | DevOps Enthusiast</title>
         <meta
           name="description"
-          content="I’m a web developer specializing in building (and occasionally designing) exceptional digital experiences."
+          content="Cloud & DevOps Enthusiast | Aspiring DevOps Engineer | Dedicated to Continuous Improvement"
         />
         <link rel="icon" href="/assets/logo4.png" />
       </Head>

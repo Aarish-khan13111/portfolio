@@ -7,13 +7,34 @@ import devops from "../public/assets/certificate/devops.png";
 import ProjectItem from "./ProjectItem";
 import Aos from "aos";
 
-const Projects = ({ title, subTitle }) => {
+const Certificate = ({ title, subTitle }) => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
+
+  const certItem = [
+    {
+      title: "Devops",
+      backgroundImg: devops,
+      projectUrl:
+        "https://www.udemy.com/certificate/UC-b6e6529c-84e6-46d1-aae6-72ebecab6988/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com",
+    },
+    {
+      title: "Full stack MERN",
+      backgroundImg: mern,
+      projectUrl:
+        "https://courses.learncodeonline.in/learn/certificate/6574658-50332",
+    },
+    {
+      title: "React js",
+      backgroundImg: react,
+      projectUrl:
+        "https://courses.learncodeonline.in/learn/certificate/6574658-50332",
+    },
+  ];
   return (
-    <div id="projects" className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
+    <div id="projects" className="mt-12 md:pl-12 md:ml-12">
+      <div className=" mx-auto px-2 py-16 md:ml-10">
         <p
           className="text-xl tracking-widest uppercase text-[#D32222]"
           data-aos="zoom-in-up">
@@ -22,26 +43,25 @@ const Projects = ({ title, subTitle }) => {
         <h2 className="py-4" data-aos="zoom-in-up">
           {subTitle}
         </h2>
-        <div className="grid md:grid-cols-2 gap-8" data-aos="zoom-in-up">
-          <ProjectItem
-            title="Full stack MERN"
-            backgroundImg={mern}
-            projectUrl="https://courses.learncodeonline.in/learn/certificate/6574658-50332"
-          />
-          <ProjectItem
-            title="React js"
-            backgroundImg={react}
-            projectUrl="https://courses.learncodeonline.in/learn/certificate/6574658-50332"
-          />
-          <ProjectItem
-            title="Devops"
-            backgroundImg={devops}
-            projectUrl="https://www.udemy.com/certificate/UC-b6e6529c-84e6-46d1-aae6-72ebecab6988/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
-          />
+        <div className="overflow-x-scroll scrollbar-hide py-5 p-2">
+          <div
+            className="flex w-[75rem] md:w-[100rem]  gap-8"
+            data-aos="zoom-in-up">
+            {certItem.map((item, index) => (
+              //  console.log(item);
+              <ProjectItem
+                key={item.title}
+                title={item.title}
+                backgroundImg={item.backgroundImg}
+                projectUrl={item.projectUrl}
+              />
+            ))}
+          </div>
+          {/* Arrow Icon with Pulse Effect */}
         </div>
       </div>
     </div>
   );
 };
 
-export default Projects;
+export default Certificate;
