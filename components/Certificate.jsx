@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import mern from "../public/assets/certificate/mern.png";
 import react from "../public/assets/certificate/react.png";
 import devops from "../public/assets/certificate/devops.png";
+import Docker from "../public/assets/certificate/Docker.png";
 import ProjectItem from "./ProjectItem";
 import Aos from "aos";
 
@@ -13,6 +14,12 @@ const Certificate = ({ title, subTitle }) => {
   }, []);
 
   const certItem = [
+    {
+      title: "Docker & kubernetes",
+      backgroundImg: Docker,
+      projectUrl:
+        "https://www.udemy.com/certificate/UC-fc6e4111-3a4e-4479-843f-5497149091e6/",
+    },
     {
       title: "Devops",
       backgroundImg: devops,
@@ -45,7 +52,7 @@ const Certificate = ({ title, subTitle }) => {
         </h2>
         <div className="overflow-x-scroll scrollbar-hide py-5 p-2">
           <div
-            className="flex w-[65rem] md:w-[100rem]  gap-8"
+            className="flex w-[90rem] md:w-[130rem]  gap-8"
             data-aos="zoom-in-up">
             {certItem.map((item, index) => (
               //  console.log(item);
